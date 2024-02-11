@@ -23,6 +23,8 @@ import org.opensearch.plugins.Plugin;
 import org.opensearch.test.InternalTestCluster;
 import org.opensearch.test.MockHttpTransport;
 
+import org.junit.Ignore;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -34,6 +36,7 @@ import java.util.Map;
 
 import static org.opensearch.test.NodeRoles.dataNode;
 
+@Ignore("https://github.com/opensearch-project/k-NN/issues/1392")
 public class KNNSettingsTests extends KNNTestCase {
 
     private static final String INDEX_NAME = "myindex";
